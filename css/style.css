@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: serif;
+    background-color: black;
+    color: #fff;
+}
+
+section {
+    min-height: 100vh;
+    margin: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 3rem;
+    margin: 5rem 0rem;
+
+}
+
+.faq {
+    width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgb(129, 181, 206);
+    cursor: pointer;
+    color: red;
+}
+
+.faq1 {
+    width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid blue;
+    cursor: pointer;
+    color: yellow;
+}
+
+.faq2 {
+    width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid red;
+    cursor: pointer;
+    color: green;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: normal;
+}
+
+.question h3 {
+    font-size: 1.8rem;
+
+
+}
+
+.ansewer p {
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.4rem;
+    color: white;
+
+}
+
+.ansewer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.9s ease;
+}
+
+.active .ansewer {
+    max-height: 300px;
+}
+
+.active1 .ansewer {
+    max-height: 300px;
+
+}
+
+.active2 .ansewer {
+    max-height: 300px;
+
+}
+
+svg {
+    background-color: transparent;
+    border: none;
+}
+
+.active svg {
+    transform: rotate(180deg);
+}
+
+.active1 svg {
+    transform: rotate(180deg);
+}
+
+.active2 svg {
+    transform: rotate(180deg);
+}
+
+svg {
+    transition: transform 0.5s ease-in;
+}
